@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en" data-framework="css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'">
+		<meta name="description" content="A TodoMVC written in HTML and CSS, with no JavaScript.">
+		<title>TodoMVC: CSS</title>
+		<link rel="stylesheet" href="src/app.css">
+		<link rel="expect" href="#info" blocking="render">
+	</head>
+	<body>
+<section class="todoapp">
+<form id="todos" autocomplete="off" method="dialog" action="data:text/html;charset=utf-8,%3Cmeta%20http-equiv=Content-Security-Policy%20content=%22default-src%20'none';%20style-src%20'unsafe-inline';%20font-src%20data:%22%3E%3Cstyle%3E@font-face%7Bfont-family:q;src:url(data:font/woff2;base64,d09GMgABAAAAAAJ4AAsAAAAABFgAAAIuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHIEUBmAATMqCDgE2AiQDGMsOBCAFbwc4G5QDQC4KY3DPcV6UppTMTtYvFO1i8SMoYUzvk5aHwIrAA6KqnXHo9Hj4vL397QKM1+0iSyBK0jQwrDihP3XMRef/KkrX5/MNRwMaSIkMG7xAdl5VK8hVbD3slLMSj1JK+HnZA4syzqi20QTOQxnQpwHPcbpNRREleoTVV9RTRB0RiKnSwbaZ2VVSro3rU1IEAHvDd3NuHF8TASImJIuARMi8gBAwMU2cSZNDRgCIGAkQ44KcZJAiIADixASJiMden4ICnH4HAaNZBNR0gF4k1IR/vL8yAgYcZHECWQL6QEyEMTUaDXfwT9B4+eT0vQQAAMysl6AgB7gwtLiV3EygKL8xLSdTZ+o1Ba4i/ziyHTU6jaB8QBpKrQLA7fJ4vBZUZJwOHo/LweHwfGTcTk6J0C6gVuEaNY+nng1x4A+cDg+qdzJiiEQN4bZTmo3I1XRLxWrLG0Qh1yg1rSaTDO0AWkkyWdAkm0z1aIIamKnUmxiOesiSimqg18I3ZQ26rEXjc8nmhWMSc9eIHK9tVsiU6tVa1++jaYM6oAYIdwW/2efC4ugcbic249P+vsrctoWA8FWTpOvSQ1e8nlE2EqjeNIMzAMKMqdDRD8UTiLxGqFxAMwLbmY0+FVOHKwAAkOVcggQCIaMcgKG1AnoIgCQBATBhSZwaESF5MlEwKRqvqLq59clDQPmy13Ng1ZltZ+asm1Rmy5lzD5bt2HPj2IZLhltCIEWZqD8ZcY2zv00AAAA=)%20format(%27woff2%27);unicode-range:U+26,U+2B,U+3D,U+2026%7Dbody%7Bmargin:0;font-size:0;line-height:0%7Dxmp%7Bdisplay:block;box-sizing:border-box;width:fit-content;max-width:100%25;height:58.8px;margin:0;padding:0%2050px%200%2060px;text-indent:-0.6em;clip-path:inset(0%20calc(50px%20%2B%200.63em)%200%2060px);font:400%2024px/58.8px%20q,Helvetica%20Neue,Helvetica,Arial,sans-serif;color:%23484848;overflow:hidden;text-overflow:ellipsis;white-space:pre;-webkit-font-smoothing:antialiased%7D@media%20(min-height:706.1px)%7Bxmp%7Bcolor:%23949494;text-decoration:line-through%7D%7D%3C/style%3E"
+			><button hidden></button
+			><input class="rest" required maxlength="0" tabindex="-1" aria-hidden="true">
+<header class="header"
+			><h1>todos</h1></header>
+<section class="main latch"
+			><i class="spot"></i
+			><i class="ta"
+			><button type="button" class="toggle-all" commandfor="ta-cmd" command="toggle-popover"
+			><span class="ta-name"
+			><span class="ta-c">Mark all as complete</span
+			><span class="ta-a">Mark all as active</span></span></button
+			><i class="cmd" id="ta-cmd" popover="manual"></i></i>
+<i class="k0"></i
+			><ul class="todo-list">
+<li class="item" style="--slot: 0"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g1" commandfor="tc1" command="toggle-popover" aria-labelledby="g1 t1"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc1" popover="manual"></i></span
+			><label for="t1" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p1"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t1" name="<xmp/id='r1'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p1" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t1"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s1" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s1" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx1" command="toggle-popover" aria-labelledby="del t1"></button
+			><i class="cmd gxc" id="gx1" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t1"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 1"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g2" commandfor="tc2" command="toggle-popover" aria-labelledby="g2 t2"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc2" popover="manual"></i></span
+			><label for="t2" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p2"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t2" name="</xmp><xmp/id='r2'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p2" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t2"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s2" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s2" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx2" command="toggle-popover" aria-labelledby="del t2"></button
+			><i class="cmd gxc" id="gx2" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t2"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 2"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g3" commandfor="tc3" command="toggle-popover" aria-labelledby="g3 t3"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc3" popover="manual"></i></span
+			><label for="t3" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p3"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t3" name="</xmp><xmp/id='r3'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p3" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t3"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s3" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s3" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx3" command="toggle-popover" aria-labelledby="del t3"></button
+			><i class="cmd gxc" id="gx3" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t3"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 3"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g4" commandfor="tc4" command="toggle-popover" aria-labelledby="g4 t4"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc4" popover="manual"></i></span
+			><label for="t4" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p4"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t4" name="</xmp><xmp/id='r4'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p4" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t4"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s4" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s4" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx4" command="toggle-popover" aria-labelledby="del t4"></button
+			><i class="cmd gxc" id="gx4" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t4"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 4"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g5" commandfor="tc5" command="toggle-popover" aria-labelledby="g5 t5"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc5" popover="manual"></i></span
+			><label for="t5" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p5"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t5" name="</xmp><xmp/id='r5'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p5" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t5"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s5" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s5" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx5" command="toggle-popover" aria-labelledby="del t5"></button
+			><i class="cmd gxc" id="gx5" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t5"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 5"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g6" commandfor="tc6" command="toggle-popover" aria-labelledby="g6 t6"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc6" popover="manual"></i></span
+			><label for="t6" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p6"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t6" name="</xmp><xmp/id='r6'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p6" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t6"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s6" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s6" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx6" command="toggle-popover" aria-labelledby="del t6"></button
+			><i class="cmd gxc" id="gx6" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t6"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 6"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g7" commandfor="tc7" command="toggle-popover" aria-labelledby="g7 t7"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc7" popover="manual"></i></span
+			><label for="t7" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p7"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t7" name="</xmp><xmp/id='r7'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p7" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t7"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s7" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s7" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx7" command="toggle-popover" aria-labelledby="del t7"></button
+			><i class="cmd gxc" id="gx7" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t7"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 7"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g8" commandfor="tc8" command="toggle-popover" aria-labelledby="g8 t8"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc8" popover="manual"></i></span
+			><label for="t8" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p8"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t8" name="</xmp><xmp/id='r8'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p8" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t8"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s8" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s8" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx8" command="toggle-popover" aria-labelledby="del t8"></button
+			><i class="cmd gxc" id="gx8" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t8"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 8"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g9" commandfor="tc9" command="toggle-popover" aria-labelledby="g9 t9"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc9" popover="manual"></i></span
+			><label for="t9" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p9"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t9" name="</xmp><xmp/id='r9'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p9" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t9"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s9" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s9" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx9" command="toggle-popover" aria-labelledby="del t9"></button
+			><i class="cmd gxc" id="gx9" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t9"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 9"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g10" commandfor="tc10" command="toggle-popover" aria-labelledby="g10 t10"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc10" popover="manual"></i></span
+			><label for="t10" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p10"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t10" name="</xmp><xmp/id='r10'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p10" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t10"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s10" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s10" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx10" command="toggle-popover" aria-labelledby="del t10"></button
+			><i class="cmd gxc" id="gx10" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t10"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 10"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g11" commandfor="tc11" command="toggle-popover" aria-labelledby="g11 t11"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc11" popover="manual"></i></span
+			><label for="t11" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p11"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t11" name="</xmp><xmp/id='r11'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p11" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t11"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s11" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s11" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx11" command="toggle-popover" aria-labelledby="del t11"></button
+			><i class="cmd gxc" id="gx11" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t11"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+<li class="item" style="--slot: 11"
+			><div class="row latch"
+			><i class="spot"></i>
+<div class="todo"
+			><span class="toggle"
+			><button type="button" class="tog" id="g12" commandfor="tc12" command="toggle-popover" aria-labelledby="g12 t12"
+			><span class="fc">Mark as complete</span
+			><span class="fa">Mark as active</span></button
+			><i class="cmd tgc" id="tc12" popover="manual"></i></span
+			><label for="t12" class="under"
+			><span class="tname"
+			><span class="tn">Todo</span
+			><span class="tnn">New todo</span></span></label
+			><span popover class="pop" id="p12"
+			><input class="sink" required maxlength="0" tabindex="-1" aria-hidden="true"
+			><input type="text" class="title" id="t12" name="</xmp><xmp/id='r12'>" required pattern="(?!.*<\/[xX][mM][pP]).*\S.*"
+			placeholder="What needs to be done?" spellcheck="false" autofocus></span
+			><button type="button" class="open" popovertarget="p12" popovertargetaction="show" tabindex="-1" aria-labelledby="edit t12"></button
+			><button class="snap" formmethod="get" formnovalidate formtarget="s12" tabindex="-1" aria-hidden="true"></button
+			><i class="cf"
+			><iframe class="copy" name="s12" sandbox tabindex="-1" aria-hidden="true"></iframe></i
+			><span class="destroy"
+			><span class="dq"
+			><button type="button" class="gone" commandfor="gx12" command="toggle-popover" aria-labelledby="del t12"></button
+			><i class="cmd gxc" id="gx12" popover="manual"></i
+			><button type="reset" class="wipe" aria-labelledby="del t12"></button></span></span></div>
+<i class="tally"></i>
+</div></li>
+</ul>
+<span id="edit" hidden>Edit</span
+			><span id="del" hidden>Delete</span
+			><input class="last" value=" " pattern="y" required maxlength="0" tabindex="-1" aria-label="This page holds 12 todos. Rows held by deleted todos are free again once the list is empty."
+			title="This page holds 12 todos. Rows held by deleted todos are free again once the list is empty"
+			><input type="hidden" name="</xmp>">
+<div class="sums" aria-hidden="true"
+			><i class="sum"></i></div>
+</section>
+<footer class="footer"
+			><span class="todo-count" role="status" aria-atomic="true"
+			><strong aria-hidden="true"></strong
+			><span class="said"
+			><i class="q1"
+			><i class="q0"
+			><i class="qs"
+			><b class="d1-1">1</b
+			><b class="d0-0">0</b
+			><b class="d0-1">1</b
+			><b class="d0-2">2</b
+			><b class="d0-3">3</b
+			><b class="d0-4">4</b
+			><b class="d0-5">5</b
+			><b class="d0-6">6</b
+			><b class="d0-7">7</b
+			><b class="d0-8">8</b
+			><b class="d0-9">9</b
+			><b class="one"> item</b
+			><b class="many"> items</b> left</i></i></i></span></span>
+<ul class="filters"
+			><li
+			><i class="route" id="/"></i
+			><a href="#/" data-filter="0">All</a
+			><a href="#/" data-filter="0" aria-current="page">All</a></li
+			><li
+			><i class="route" id="/active"></i
+			><a href="#/active" data-filter="1">Active</a
+			><a href="#/active" data-filter="1" aria-current="page">Active</a></li
+			><li
+			><i class="route" id="/completed"></i
+			><a href="#/completed" data-filter="2">Completed</a
+			><a href="#/completed" data-filter="2" aria-current="page">Completed</a></li></ul>
+<span class="cc"
+			><button type="button" class="clear-completed" commandfor="cc-cmd" command="toggle-popover">Clear completed</button
+			><i class="cmd" id="cc-cmd" popover="manual"></i
+			><button type="reset" class="wipe-all">Clear completed</button></span></footer></form>
+</section>
+<footer class="info" id="info"
+			><p
+			><span class="dc">Double-click</span
+			><span class="dt">Double-tap</span> to edit a todo</p
+			><p>Made with CSS alone</p
+			><p>After <a href="http://todomvc.com">TodoMVC</a></p></footer>
+	</body>
+</html>
