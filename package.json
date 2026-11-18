@@ -1,0 +1,27 @@
+{
+  "name": "todomvc-css",
+  "version": "1.0.0",
+  "description": "A TodoMVC written in HTML and CSS, with no JavaScript.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server ./ -p 7001 -c-1 --cors",
+    "build": "node scripts/build.js",
+    "serve": "http-server ./dist -p 7002 -c-1 --cors",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "todomvc-common": "^1.0.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.65.1",
+    "http-server": "^14.1.1"
+  },
+  "overrides": {
+    "axe-core": "4.14.0"
+  }
+}

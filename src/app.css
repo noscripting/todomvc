@@ -1,0 +1,1618 @@
+/* Registered numbers -------------------------------------------------------------------------- */
+@property --la {
+	syntax: '<number>';
+	inherits: false;
+	initial-value: -1;
+}
+
+@property --lc {
+	syntax: '<number>';
+	inherits: false;
+	initial-value: -1;
+}
+
+@property --rec {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-cx {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-cx {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-cx {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-cx {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-done {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-done {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-done {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-done {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-dead {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-dead {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-dead {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-dead {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-live {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-live {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-live {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-live {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-tk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-tk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-tk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-tk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --k-gk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --x-gk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --set-gk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --w-gk {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --e-cc {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --e-ta {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --e-gx {
+	syntax: '<integer>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@property --next {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --dead {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --live {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --tc {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --gx {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --f {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --ta-open {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --cc-open {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --cc-edge {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --ta-edge {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --ta-k {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --n-pack {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --n-live {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --n-done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --n-left {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --to-all {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --shown {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --out {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --struck {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+/* Keyframes, fonts and counter styles ------------------------------------------------------- */
+@keyframes latch {
+	from {
+		--la: 4096;
+		column-gap: 1px;
+	}
+	to {
+		--la: 0;
+		column-gap: 0px;
+	}
+}
+
+@keyframes cnt {
+	from {
+		--lc: 4096;
+	}
+	to {
+		--lc: 0;
+	}
+}
+
+@keyframes aside {
+	from {
+		translate: -300vw 0;
+	}
+}
+
+@keyframes up {
+	from {
+		top: -300vh;
+	}
+}
+
+@keyframes peek {
+	from {
+		visibility: visible;
+	}
+}
+
+@font-face {
+	font-family: trim-spaces;
+	src: url("data:font/woff2;base64,d09GMgABAAAAAAFUAAsAAAAAAvQAAAELAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHGgGYAA8ygEBN\
+gIkAwzLCAQgBW8HMBsxAgAuDsxTnw5t08HwIx+mQ9Elx3ieOmLv7273Qeeh5wUcSKBhmnhiZRrVePHuznHtOR2X51m57NHaqxVJk\
+RJVUN08kLjA0q3z3JbHJUlgwQNRIGGadR6gBRbqBOc2dt2KR7BX9CMFo1YcyVPKAqhB74K82HqACIpBewYRw6qYFXsIIgqKIIbFo\
+IiImveIBqig21NY81Hrh9QvAQBrgoKKeVUwr9nDoCaKNR+9w6/0724cQBCej/+sU/wP1/oLb9sNPxuLFwCoCgixLH9IJlBdZBGOA\
+oVtgOZEQIwjoBgyrkobEcvmdBeTDi8pk5XWmv6A6llBHM3BFAleXdNWdMO3mMs3UjVlaLoiAgAAAA==") format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	ascent-override: 95.2%;
+	descent-override: 21.3%;
+	line-gap-override: 2.8%;
+	font-display: block;
+}
+
+@font-face {
+	font-family: trim-text;
+	src: url(trim-text.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	ascent-override: 95.2%;
+	descent-override: 21.3%;
+	line-gap-override: 2.8%;
+	font-display: block;
+}
+
+@counter-style todo-item {
+	system: fixed 1;
+	symbols: 'item';
+	fallback: todo-items;
+}
+
+@counter-style todo-items {
+	system: cyclic;
+	symbols: 'items';
+}
+
+/* The page ----------------------------------------------------------------------------------- */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #f5f5f5;
+}
+
+body {
+	background: #f5f5f5;
+	color: #111;
+	font: 300 14px/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	max-width: 550px;
+	-webkit-font-smoothing: antialiased;
+	timeline-scope: --cnt;
+}
+
+.todoapp :where(button) {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+.todoapp :where(*),
+.todoapp ::before,
+.todoapp ::after {
+	box-sizing: revert;
+}
+
+.route {
+	display: none;
+}
+
+#todos {
+	display: contents;
+	timeline-scope: --mlatch;
+}
+
+/* The latch: a number kept by layout ---------------------------------------------------------- */
+.latch {
+	animation: latch linear both;
+	animation-timeline: --latch;
+	--rec: max(0, round(var(--la) - 1));
+}
+
+.spot {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 1px;
+	height: 0;
+	&::before {
+		content: '';
+		display: block;
+		width: 0;
+		height: 1px;
+		view-timeline: --latch x;
+		margin-left: calc(var(--next) * 1px);
+	}
+}
+
+.todoapp {
+	margin: 130px 0 40px 0;
+	position: relative;
+	isolation: isolate;
+	container: todoapp / inline-size;
+	--filter: 0;
+	--n-pack: max(0, round(var(--lc) - 1));
+	--n-live: round(down, calc(var(--n-pack) / 16), 1);
+	--n-done: mod(var(--n-pack), 16);
+	--n-left: calc(var(--n-live) - var(--n-done));
+	--to-all: calc(1 - min(sign(var(--n-live)), 1 - min(1, abs(var(--n-done) - var(--n-live)))));
+	--some: min(1, var(--n-live));
+	--alldone: calc(min(sign(var(--n-live)), 1 - min(1, abs(var(--n-done) - var(--n-live)))));
+	animation: cnt linear both;
+	animation-timeline: --cnt;
+	&:has([id="/active"]:target) {
+		--filter: 1;
+	}
+	&:has([id="/completed"]:target) {
+		--filter: 2;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: #fff;
+		box-shadow: 0 2px 4px 0 rgb(0 0 0 / 0.2), 0 25px 50px 0 rgb(0 0 0 / 0.1);
+		pointer-events: none;
+	}
+	& h1 {
+		position: absolute;
+		top: -140px;
+		width: 100%;
+		font-size: 80px;
+		font-weight: 200;
+		text-align: center;
+		color: #b83f45;
+		text-rendering: optimizeLegibility;
+	}
+	& input::placeholder {
+		font-style: italic;
+		font-weight: 400;
+		color: rgb(0 0 0 / 0.4);
+	}
+}
+
+.header {
+	position: relative;
+	anchor-name: --hdr;
+	height: 65px;
+	box-shadow: inset 0 -2px 1px rgb(0 0 0 / 0.03);
+	.todoapp:has(.last:focus) & {
+		box-shadow: inset 0 0 2px 2px #cf7d7d;
+	}
+	.todoapp:has(.item:last-of-type .title:valid):not(:has(.item .title:focus)) &::before {
+		content: 'This page holds 12 todos.';
+		position: absolute;
+		inset: 8px 0 auto 60px;
+		font: italic 400 24px/30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: rgb(0 0 0 / 0.4);
+	}
+	.todoapp:has(.item:last-of-type .title:valid):not(:has(.item .title:focus)) &::after {
+		counter-reset: held calc(12 - round(var(--n-live)));
+		content: 'Rows held by deleted todos: ' counter(held)
+			'. They are free again once the list is empty.';
+		position: absolute;
+		inset: auto auto 9px 60px;
+		width: calc(min(1, 12 - round(var(--n-live))) * (100% - 70px));
+		overflow: hidden;
+		white-space: nowrap;
+		font: italic 400 13px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: rgb(0 0 0 / 0.5);
+	}
+}
+
+/* Toggle all and Clear completed -------------------------------------------------------------- */
+.main {
+	animation-timeline: --mlatch;
+	--cc-open: 0;
+	--ta-open: 0;
+	--cc-edge: abs(var(--cc-open) - mod(var(--rec), 2));
+	--ta-edge: abs(var(--ta-open) - mod(round(down, var(--rec) / 2), 2));
+	--ta-k: mod(round(down, var(--rec) / 4), 2);
+	--next: calc(var(--cc-open) + 2 * var(--ta-open) + 4 * var(--to-all));
+	.todoapp:has(#cc-cmd:popover-open) & {
+		--cc-open: 1;
+	}
+	.todoapp:has(#ta-cmd:popover-open) & {
+		--ta-open: 1;
+	}
+	& > .spot::before {
+		view-timeline-name: --mlatch;
+	}
+}
+
+.cmd {
+	position: fixed;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.ta {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(5px + var(--some) * 5px + var(--alldone) * 10px);
+	height: 0;
+	z-index: 8;
+	container: ta / inline-size;
+}
+
+.toggle-all {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 45px;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0;
+	font-style: normal;
+	line-height: normal;
+	cursor: pointer;
+	clip-path: inset(calc((1 - var(--some)) * 50% - var(--some) * 10px));
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 2px 2px #cf7d7d;
+	}
+	&::before {
+		content: '❯';
+		content: '❯' / '';
+		display: inline-block;
+		font-size: 22px;
+		padding: 10px 27px 10px 27px;
+		transform: rotate(90deg);
+		color: color-mix(in srgb, #484848 calc(var(--alldone) * 100%), #949494);
+	}
+	@container ta (width < 7.5px) {
+		visibility: hidden;
+	}
+}
+
+.ta-name,
+.tname,
+.said {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.ta-a {
+	display: none;
+}
+
+@container ta (width > 15px) {
+	.ta-c {
+		display: none;
+	}
+	.ta-a {
+		display: inline;
+	}
+}
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 24px;
+}
+
+/* A row and its record ------------------------------------------------------------------------ */
+.item {
+	display: contents;
+	timeline-scope: --latch;
+	anchor-scope: --todo;
+	--e: 0;
+	--f: 0;
+	--kept: 0;
+	--tc: 0;
+	--gx: 0;
+	&:has(.title:invalid:not(:focus)):has(~ .item .title:valid),
+	&:has(.title:invalid):not(:has(~ .item .title:valid)) ~
+		&:has(.title:invalid):not(:has(.title:focus)) {
+		visibility: hidden;
+	}
+	&:has(.title:invalid) {
+		--e: 1;
+	}
+	&:has(.title:focus) {
+		--f: 1;
+	}
+	&:has(.tgc:popover-open) {
+		--tc: 1;
+	}
+	&:has(.gxc:popover-open) {
+		--gx: 1;
+	}
+	&:has(.title:valid):not(:focus-within, :has(.title:focus)) {
+		--kept: 1;
+	}
+}
+
+.row {
+	display: block;
+	font-style: inherit;
+	--k-cx: mod(var(--rec), 2);
+	--x-cx: calc(var(--k-cx) + var(--w-cx) * (var(--set-cx) - var(--k-cx)));
+	--k-done: mod(round(down, var(--rec) / 2), 2);
+	--x-done: calc(var(--k-done) + var(--w-done) * (var(--set-done) - var(--k-done)));
+	--done: calc(var(--x-done) + var(--e-ta) * (var(--ta-k) - var(--x-done)));
+	--k-dead: mod(round(down, var(--rec) / 4), 2);
+	--x-dead: calc(var(--k-dead) + var(--w-dead) * (var(--set-dead) - var(--k-dead)));
+	--dead: max(var(--x-dead), var(--e-cc), var(--e-gx));
+	--k-live: mod(round(down, var(--rec) / 8), 2);
+	--x-live: calc(var(--k-live) + var(--w-live) * (var(--set-live) - var(--k-live)));
+	--live: calc(var(--x-live) * (1 - max(var(--e-cc), var(--e-gx))));
+	--k-tk: mod(round(down, var(--rec) / 16), 2);
+	--x-tk: calc(var(--k-tk) + var(--w-tk) * (var(--set-tk) - var(--k-tk)));
+	--k-gk: mod(round(down, var(--rec) / 32), 2);
+	--x-gk: calc(var(--k-gk) + var(--w-gk) * (var(--set-gk) - var(--k-gk)));
+	--next: calc(var(--x-cx) + 2 * var(--done) + 4 * var(--dead) + 8 * var(--live) + 16 *
+			var(--x-tk) + 32 * var(--x-gk));
+	--e-gx: abs(var(--gx) - var(--k-gk));
+	--cx: calc(var(--x-cx) * (1 - var(--dead)));
+	--todo: calc(max(var(--cx), var(--live) * (1 - var(--e) * var(--f))));
+	--out: calc(var(--todo) - var(--shown));
+	--struck: calc(var(--todo) * var(--done));
+	--shown: calc(var(--todo) * max(1 - min(1, var(--filter)), (1 - min(1, abs(var(--filter) - 1)))
+				* (1 - var(--done)), (1 - min(1, abs(var(--filter) - 2))) * var(--done)));
+	--stack: calc((1 - var(--todo)) * (1 - var(--dead)));
+	order: calc(0 - var(--stack));
+	margin-bottom: calc(var(--stack) * -65px);
+	:where(&) {
+		--w-cx: 0;
+		--w-done: 0;
+		--w-dead: 0;
+		--w-live: 0;
+		--w-tk: 0;
+		--w-gk: 0;
+		--e-cc: 0;
+		--e-ta: 0;
+	}
+	.item:has(.title:placeholder-shown) + .item:has(.title:placeholder-shown:not(:focus)) > & {
+		position: absolute;
+		visibility: hidden;
+		transition: position 0s 1s allow-discrete;
+	}
+	.item:has(.title:valid:not(:focus)) & {
+		--w-live: calc(1 - var(--dead));
+		--set-live: 1;
+	}
+	.item:has(.title:placeholder-shown:not(:focus)) & {
+		--w-dead: 1;
+		--set-dead: 0;
+		--w-cx: 1;
+		--set-cx: 0;
+	}
+	.item:has(.title:invalid:not(:focus)) & {
+		--w-live: calc(1 - var(--x-cx));
+		--set-live: 0;
+	}
+	.item:is(:not(:has(.pop:popover-open)):has(.title:invalid), :has(.sink:focus)) & {
+		--w-dead: 1;
+		--set-dead: 0;
+		--w-done: 1;
+		--set-done: 0;
+	}
+	.todoapp .item:has(.title:valid) & {
+		--e-ta: var(--ta-edge);
+		--e-cc: calc(var(--cc-edge) * var(--done));
+	}
+	:where(.item) & {
+		--w-tk: 1;
+		--set-tk: var(--tc);
+		--w-gk: 1;
+		--set-gk: var(--gx);
+		--w-done: abs(var(--tc) - var(--k-tk));
+		--set-done: calc(1 - var(--k-done));
+	}
+	.todoapp:not(:has(:active))
+		.item:has(.open:focus):has(.title:valid):not(:has(.pop:popover-open)) & {
+		--w-cx: 1;
+		--set-cx: 1;
+	}
+	.item:has(.snap:active) & {
+		--w-cx: 1;
+		--set-cx: 0;
+	}
+	.todoapp:has(:is(.wipe, .wipe-all):active) & {
+		--w-cx: 1;
+		--set-cx: 0;
+	}
+	.item:not(:has(.pop:popover-open)):has(.title:invalid:focus) & {
+		--w-cx: 1;
+		--set-cx: 0;
+	}
+	.item:has(.pop:popover-open .title:focus) & {
+		--w-cx: 1;
+		--set-cx: 0;
+	}
+}
+
+/* The count ----------------------------------------------------------------------------------- */
+.tally,
+.k0,
+.sum {
+	position: fixed;
+	top: 0;
+	height: 1px;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.tally {
+	left: anchor(--k right);
+	width: calc(var(--todo) * (16 + var(--done)) * 1px);
+	anchor-name: --k;
+}
+
+.k0 {
+	left: 0;
+	width: 0;
+	anchor-name: --k, --k0;
+}
+
+.sum {
+	left: anchor(--k right);
+	width: 0;
+	view-timeline: --cnt x;
+}
+
+.spot::before,
+.sum {
+	view-timeline-inset: -1px calc(100% + 1px - 4096px);
+}
+
+.sums {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.last {
+	position: absolute;
+	position-anchor: --hdr;
+	top: anchor(bottom);
+	left: calc(anchor(left) + 60px);
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	.todoapp:has(.item:last-of-type .title:valid) & {
+		visibility: visible;
+	}
+}
+
+.rest {
+	display: none;
+	position: absolute;
+	top: -300vh;
+	left: -300vw;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	pointer-events: none;
+	.todoapp:has(.pop:popover-open .title:valid:focus) & {
+		display: block;
+	}
+}
+
+.sink {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	.pop:popover-open:has(.title:invalid) & {
+		display: block;
+	}
+}
+
+/* A row drawn --------------------------------------------------------------------------------- */
+.todo {
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: color-mix(in srgb, #fefefe calc(var(--stack) * 100%), #fff);
+	border-bottom: calc(var(--shown) * 1px) solid #ededed;
+	height: calc(var(--shown) * 59.8px + var(--stack) * 65px);
+	top: calc(var(--stack) * (-65px - var(--some) * 1px));
+	box-shadow: inset 0 calc(var(--stack) * -2px) 1px rgb(0 0 0 / 0.03);
+	z-index: calc(var(--stack) * (1 + var(--dead) + 2 * var(--f)) + var(--f));
+	--last: calc(1 - min(1, abs(var(--n-live) - 1)));
+	width: calc((1 - var(--kept) * (1 - var(--todo))) * (1 - max(0, var(--out))) * 100%);
+	container: row / inline-size;
+	&:has(.title:focus) {
+		overflow: visible;
+		box-shadow: 0 calc(var(--stack) * 1px) 0 0 rgb(230 230 230 / calc(var(--stack) *
+					var(--some))), inset 0 0 1px rgb(0 0 0 / calc(0.03 * (1 - var(--stack)))), 0 0 2px 2px
+			rgb(207 125 125 / var(--stack));
+	}
+	&:has(.tog:focus) {
+		box-sizing: content-box;
+		height: calc(var(--shown) * 58.8px);
+		border-bottom-width: 0;
+		margin-bottom: calc(var(--shown) * 1px);
+		box-shadow: 0 0 2px 2px #cf7d7d;
+		z-index: 2;
+	}
+	.item:has(.title:invalid:not(:placeholder-shown):not(:focus)) & {
+		z-index: 2;
+	}
+	.item & {
+		anchor-name: --todo;
+	}
+	&:not(:has(.pop:popover-open)):has(.title:invalid:focus:not(:active))::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		padding: 0 10px 0 calc(60px - var(--todo) * 43px);
+		font: italic 400 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: rgb(0 0 0 / 0.4);
+		background: inherit;
+		pointer-events: none;
+		visibility: hidden;
+		animation: peek 0.01s step-end;
+		-webkit-font-smoothing: antialiased;
+	}
+	&:not(:has(.pop:popover-open)):has(.title:invalid:placeholder-shown:focus:not(:active))::after {
+		content: 'What needs to be done?';
+	}
+	&:not(:has(.pop:popover-open)):has(.title:invalid:placeholder-shown:focus:not(:active))::after {
+		visibility: visible;
+		background: none;
+	}
+	&:not(:has(.pop:popover-open)) .title:invalid:placeholder-shown:focus:not(:active)::placeholder {
+		color: transparent;
+	}
+	@supports (-moz-appearance: none) {
+		&:not(:has(.pop:popover-open)) .title:invalid:focus:not(:active) {
+			position: relative;
+			animation: up 0.01s step-end;
+		}
+	}
+	@supports not (-moz-appearance: none) {
+		&:not(:has(.pop:popover-open)) .title:invalid:focus:not(:active) {
+			animation: aside 0.01s step-end;
+		}
+		@container style(--out: 1) {
+			visibility: hidden;
+		}
+	}
+}
+
+.under {
+	position: absolute;
+	inset: 0;
+}
+
+.todo .toggle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: calc(var(--todo) * 100%);
+	z-index: 1;
+	width: calc(40px - (1 - var(--todo)) * 2px + var(--done) * 0.0625px);
+	container: tg / inline-size;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: 0 center no-repeat;
+		pointer-events: none;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	&::before {
+		opacity: calc(1 - var(--done));
+		background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%\
+22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2\
+250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23949494%22%20stroke-width%3D%223%22%2F%3E%\
+3C%2Fsvg%3E");
+	}
+	&::after {
+		opacity: var(--done);
+		background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%\
+22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2\
+250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%2359A193%22%20stroke-width%3D%223%22%2F%3E%\
+3Cpath%20fill%3D%22%233EA390%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22%2F%\
+3E%3C%2Fsvg%3E");
+	}
+	.todo:has(.title:focus) & {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.tog,
+.gone,
+.wipe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+@container tg (width < 39px) {
+	.tog {
+		display: none;
+	}
+}
+
+.fa,
+.tnn {
+	display: none;
+}
+
+.item:has(.title:placeholder-shown) {
+	.tn {
+		display: none;
+	}
+	.tnn {
+		display: inline;
+	}
+}
+
+@container tg (width > 40.03125px) {
+	.fc {
+		display: none;
+	}
+	.fa {
+		display: inline;
+	}
+}
+
+.title {
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0 0 0 calc(var(--todo) * 43px);
+	width: calc(100% - var(--todo) * 43px);
+	padding: calc(var(--todo) * 15px) 50px calc(var(--todo) * 15px) calc(60px - var(--todo) * 43px);
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	background: none;
+	font: inherit;
+	font-weight: calc(300 + var(--todo) * 100);
+	line-height: calc(1.4em - var(--todo) * 0.2em);
+	text-overflow: ellipsis;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-font-smoothing: antialiased;
+	--ink: color-mix(in srgb, color-mix(in srgb, #949494 calc(var(--done) * 100%), #484848)
+			calc(var(--todo) * 100%), #111);
+	color: var(--ink);
+	text-decoration: line-through rgb(148 148 148 / calc(var(--todo) * var(--done)));
+	transition: color 0.4s;
+	filter: opacity(calc(1 - var(--cx)));
+	&:focus {
+		box-shadow: 0 0 2px 2px rgb(207 125 125 / calc(1 - var(--stack)));
+		outline: calc(var(--todo) * 1px) solid #999;
+		outline-offset: -1px;
+	}
+	.item:has(&:valid:not(:focus)) & {
+		opacity: max(var(--todo), var(--dead));
+	}
+	.item:has(.pop:popover-open) & {
+		filter: none;
+	}
+	@supports not (-moz-appearance: none) {
+		@container style(--struck: 0) {
+			.item & {
+				text-decoration-line: none;
+			}
+		}
+	}
+	@supports not ((-moz-appearance: none) or (hanging-punctuation: first)) {
+		.item:has(&:valid:not(:focus)) & {
+			font-family: trim-spaces, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+		}
+	}
+	@supports ((-moz-appearance: none) or ((hanging-punctuation: first) and (font: -apple-system-body))) {
+		.item:has(&:valid:not(:focus)) & {
+			font-family: trim-text, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+			text-transform: full-width;
+		}
+	}
+	.item:has(&:valid:not(:focus)) & {
+		padding-top: calc(var(--todo) * 15.09375px);
+		padding-bottom: calc(var(--todo) * 14.90625px);
+	}
+	@supports (hanging-punctuation: first) and (not (-moz-appearance: none)) {
+		.item:has(&:valid:not(:focus)) & {
+			padding-top: calc(var(--todo) * 13.515625px);
+			padding-bottom: calc(var(--todo) * 16.484375px);
+		}
+	}
+	@supports (-moz-appearance: none) {
+		.item:has(&:valid:not(:focus)) & {
+			padding-top: calc(var(--todo) * 14.5px);
+			padding-bottom: calc(var(--todo) * 15.5px);
+		}
+	}
+}
+
+/* An edit, and Escape's copy ------------------------------------------------------------------ */
+.pop {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	overflow: visible;
+	inset: auto;
+	.item & {
+		position-anchor: --todo;
+	}
+	&:not(:popover-open) {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: auto;
+		height: auto;
+	}
+	&:popover-open {
+		position: absolute;
+		top: round(anchor(top), 1px);
+		left: anchor(left);
+		width: anchor-size(width);
+		height: anchor-size(height);
+		opacity: calc(1 - var(--cx));
+	}
+	&::backdrop {
+		display: none;
+	}
+	&:popover-open:not(:focus-within) {
+		pointer-events: none;
+	}
+	&:popover-open:has(.title:invalid) {
+		clip-path: inset(0 0 0 45px);
+	}
+	.item &:popover-open {
+		opacity: 1;
+	}
+}
+
+.open,
+.snap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 43px;
+	right: 50px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	scale: var(--todo);
+	cursor: text;
+}
+
+.open {
+	z-index: 2;
+	.item:has(.title:placeholder-shown:focus):not(:has(.pop:popover-open)) & {
+		visibility: hidden;
+		transition: visibility 0s 0.1s;
+	}
+	.item:has(.title:invalid):not(:focus-within):not(:has(.pop:popover-open)) & {
+		visibility: hidden;
+	}
+}
+
+.snap {
+	z-index: 3;
+	translate: calc(var(--cx) * -300vw) 0;
+	&:focus:not(:active),
+	.item:has(.open:focus) &,
+	.item:has(.pop:popover-open:focus-within) & {
+		pointer-events: none;
+	}
+}
+
+.cf {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.copy {
+	position: absolute;
+	left: 0;
+	top: calc(var(--slot) * -58.8px);
+	width: 100%;
+	height: calc(705.6px + var(--done) * 1px);
+	border: 0;
+	margin: 0;
+	opacity: var(--cx);
+	pointer-events: none;
+	color-scheme: light;
+	.item:has(.pop:popover-open) & {
+		opacity: 0;
+	}
+}
+
+/* The × --------------------------------------------------------------------------------------- */
+.destroy {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 0;
+	font-size: 30px;
+	color: #949494;
+	text-align: center;
+	opacity: 0;
+	transition: color 0.2s ease-out;
+	scale: var(--todo);
+	&::after {
+		content: '×';
+		content: '×' / '';
+		display: block;
+		height: 100%;
+		line-height: 1.1;
+	}
+	.todo:hover &,
+	&:has(:focus-visible) {
+		opacity: 1;
+	}
+	@media (hover: none) {
+		opacity: 1;
+	}
+	&:has(:focus-visible) {
+		box-shadow: 0 0 2px 2px #cf7d7d;
+	}
+	&:hover,
+	&:has(:focus) {
+		color: #c18585;
+	}
+	.todo:has(.title:focus) & {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.wipe {
+	display: none;
+	padding: 0;
+	border: 0;
+}
+
+.dq {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: calc(40px - var(--last) * 1px - (1 - var(--todo)) * 2px);
+	container: dq / inline-size;
+}
+
+@container dq (width < 38.5px) {
+	.gone {
+		display: none;
+	}
+}
+
+@container dq (38.5px < width < 39.5px) {
+	.gone {
+		display: none;
+	}
+	.wipe {
+		display: block;
+	}
+}
+
+@container row (width < 1px) {
+	.under,
+	.pop,
+	.open,
+	.toggle,
+	.destroy {
+		visibility: hidden;
+	}
+}
+
+@supports not ((anchor-name: --a) and (animation-timeline: view()) and selector(:popover-open)) {
+	body::before {
+		content: 'This page needs Chrome 135, Safari 26.2 or Firefox 159, or later.';
+		display: block;
+		padding: 16px;
+		color: #b83f45;
+		font: 16px/1.4 Helvetica, Arial, sans-serif;
+		text-align: center;
+	}
+}
+
+/* The footer: the count, the filters, Clear completed ----------------------------------------- */
+.main,
+.footer {
+	border-top: calc(var(--some) * 1px) solid #e6e6e6;
+}
+
+.footer {
+	position: relative;
+	z-index: 1;
+	margin-top: calc(var(--some) * -1px * min(1, max(0, 1 - var(--filter)) * var(--n-live) + (1 -
+					max(0, 1 - var(--filter)) - max(0, var(--filter) - 1)) * var(--n-left) + max(0,
+					var(--filter) - 1) * var(--n-done)));
+	height: calc(var(--some) * 20px);
+	padding: calc(var(--some) * 10px) 15px;
+	font-size: 15px;
+	text-align: center;
+	width: calc(var(--some) * (100% - 30px));
+	container: ft / inline-size;
+	& > * {
+		clip-path: inset(calc((1 - var(--some)) * 50% - var(--some) * 200vmax));
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: calc(var(--some) * 50px);
+		opacity: var(--some);
+		overflow: hidden;
+		pointer-events: none;
+		box-shadow: 0 1px 1px rgb(0 0 0 / 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgb(0 0 0 /
+				0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgb(0 0 0 / 0.2);
+	}
+	@container todoapp (width <= 430px) {
+		height: calc(var(--some) * 50px);
+	}
+}
+
+@container ft (width < 1px) {
+	.footer > *,
+	.filters a {
+		display: none;
+	}
+}
+
+.todo-count {
+	float: left;
+	text-align: left;
+	counter-reset: n calc(round(var(--n-left)));
+	& strong {
+		font-weight: 300;
+	}
+	& strong::before {
+		content: counter(n) / '';
+	}
+	&::after {
+		content: ' ' counter(n, todo-item) ' left' / '';
+	}
+}
+
+.said i {
+	display: block;
+	height: 1px;
+	container-type: inline-size;
+}
+
+.said b {
+	display: none;
+	font-weight: inherit;
+}
+
+.said .q1 {
+	container-name: q1;
+	width: calc(min(1, round(down, var(--n-left) / 10, 1)) * (mod(round(down, var(--n-left) / 10,
+						1), 10) + 1) * 1px);
+}
+
+.said .q0 {
+	container-name: q0;
+	width: calc((mod(round(down, var(--n-left) / 1, 1), 10) + 1) * 1px);
+}
+
+.said .qs {
+	container-name: qs;
+	width: calc(min(1, abs(var(--n-left) - 1)) * 1px);
+}
+
+@container q1 (1.5px < width < 2.5px) {
+	.said .d1-1 {
+		display: inline;
+	}
+}
+
+@container q0 (0.5px < width < 1.5px) {
+	.said .d0-0 {
+		display: inline;
+	}
+}
+
+@container q0 (1.5px < width < 2.5px) {
+	.said .d0-1 {
+		display: inline;
+	}
+}
+
+@container q0 (2.5px < width < 3.5px) {
+	.said .d0-2 {
+		display: inline;
+	}
+}
+
+@container q0 (3.5px < width < 4.5px) {
+	.said .d0-3 {
+		display: inline;
+	}
+}
+
+@container q0 (4.5px < width < 5.5px) {
+	.said .d0-4 {
+		display: inline;
+	}
+}
+
+@container q0 (5.5px < width < 6.5px) {
+	.said .d0-5 {
+		display: inline;
+	}
+}
+
+@container q0 (6.5px < width < 7.5px) {
+	.said .d0-6 {
+		display: inline;
+	}
+}
+
+@container q0 (7.5px < width < 8.5px) {
+	.said .d0-7 {
+		display: inline;
+	}
+}
+
+@container q0 (8.5px < width < 9.5px) {
+	.said .d0-8 {
+		display: inline;
+	}
+}
+
+@container q0 (9.5px < width < 10.5px) {
+	.said .d0-9 {
+		display: inline;
+	}
+}
+
+@container qs (width < 0.5px) {
+	.said .one {
+		display: inline;
+	}
+}
+
+@container qs (width > 0.5px) {
+	.said .many {
+		display: inline;
+	}
+}
+
+.filters {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	right: 0;
+	left: 0;
+	@container todoapp (width <= 430px) {
+		bottom: 10px;
+	}
+	& li {
+		display: inline;
+	}
+	& li a {
+		color: inherit;
+		margin: 3px;
+		padding: 3px 7px;
+		text-decoration: none;
+		border: 1px solid transparent;
+		border-radius: 3px;
+	}
+	& li a:hover {
+		border-color: #db7676;
+	}
+	& li a[aria-current] {
+		border-color: #ce4646;
+	}
+	& li a:focus {
+		outline: 0;
+		box-shadow: 0 0 2px 2px #cf7d7d;
+	}
+	@media (forced-colors: active) {
+		& li a {
+			border-color: Canvas;
+		}
+		& li a:hover {
+			border-color: LinkText;
+		}
+		& li a[aria-current] {
+			border-color: Highlight;
+		}
+		& li a:focus {
+			outline: 2px solid Highlight;
+		}
+	}
+	& a:active::after {
+		content: '';
+		position: fixed;
+		inset: 0;
+		z-index: 9;
+	}
+}
+
+@container style(--filter: 0) {
+	.filters a:is([data-filter="0"]:not([aria-current]), [aria-current]:not([data-filter="0"])) {
+		display: none;
+	}
+}
+
+@container style(--filter: 1) {
+	.filters a:is([data-filter="1"]:not([aria-current]), [aria-current]:not([data-filter="1"])) {
+		display: none;
+	}
+}
+
+@container style(--filter: 2) {
+	.filters a:is([data-filter="2"]:not([aria-current]), [aria-current]:not([data-filter="2"])) {
+		display: none;
+	}
+}
+
+.cc {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	container: cc / inline-size;
+	pointer-events: none;
+	width: calc(300px - min(var(--some), max(0, var(--n-done))) * (1 - min(1, max(0,
+						var(--n-left)))) * 100px + (1 - min(1, max(0, var(--n-done)))) * 100px);
+	& > * {
+		pointer-events: auto;
+	}
+}
+
+.clear-completed {
+	float: right;
+	position: relative;
+	line-height: 19px;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 2px 2px #cf7d7d;
+	}
+	@media (forced-colors: active) {
+		&:focus {
+			outline: 2px solid Highlight;
+		}
+	}
+	.footer & {
+		--has: min(var(--some), var(--n-done));
+		clip-path: inset(calc((1 - var(--has)) * 50% - var(--has) * 10px));
+		max-height: calc(var(--has) * 19px);
+		overflow: hidden;
+	}
+}
+
+.wipe-all {
+	display: none;
+}
+
+@container cc (width > 350px) {
+	.clear-completed {
+		visibility: hidden;
+	}
+}
+
+@container cc (width < 250px) {
+	.clear-completed {
+		display: none;
+	}
+	.wipe-all {
+		display: block;
+		float: right;
+		line-height: 19px;
+		cursor: pointer;
+	}
+	.wipe-all:hover {
+		text-decoration: underline;
+	}
+	.wipe-all:focus {
+		outline: 0;
+		box-shadow: 0 0 2px 2px #cf7d7d;
+	}
+}
+
+.info {
+	margin: 65px auto 0;
+	color: #4d4d4d;
+	font-size: 11px;
+	text-shadow: 0 1px 0 rgb(255 255 255 / 0.5);
+	text-align: center;
+	& p {
+		line-height: 1;
+	}
+	& a {
+		color: inherit;
+		font-weight: 400;
+		text-decoration: none;
+	}
+	& a:hover {
+		text-decoration: underline;
+	}
+	& .dt {
+		display: none;
+	}
+	@media (hover: none) and (pointer: coarse) {
+		& .dc {
+			display: none;
+		}
+		& .dt {
+			display: inline;
+		}
+	}
+}
