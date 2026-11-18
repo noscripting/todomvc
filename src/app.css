@@ -1185,9 +1185,9 @@ body {
 .copy {
 	position: absolute;
 	left: 0;
-	top: calc(var(--slot) * -58.8px);
+	top: calc(var(--slot) * -60px);
 	width: 100%;
-	height: calc(705.6px + var(--done) * 1px);
+	height: calc(720px + var(--done) * 1px);
 	border: 0;
 	margin: 0;
 	opacity: var(--cx);
