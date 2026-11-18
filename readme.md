@@ -2,7 +2,7 @@
 
 ## Description
 
-This application uses HTML and CSS, with no JavaScript, to implement the TodoMVC application. Each todo's state is packed into one number, which the stylesheet keeps in the page's layout.
+This application uses HTML and CSS, with no JavaScript, to implement the TodoMVC application. The todos' state is kept in the page's layout: each of a todo's flags (done, deleted, and two more) is one bit of a number with a bit for every todo, held as the length of a chain of boxes and read back by a view timeline.
 
 ## Usage
 
