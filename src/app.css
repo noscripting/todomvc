@@ -1,10 +1,4 @@
 /* Registered numbers */
-@property --slot {
-	syntax: '<integer>';
-	inherits: true;
-	initial-value: 0;
-}
-
 @property --lw-cx {
 	syntax: '<number>';
 	inherits: false;
@@ -53,25 +47,13 @@
 	initial-value: 0;
 }
 
-@property --lw-count {
-	syntax: '<number>';
-	inherits: false;
-	initial-value: -1;
-}
-
-@property --word-count {
+@property --slot {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
 }
 
-@property --lw-flags {
-	syntax: '<number>';
-	inherits: false;
-	initial-value: -1;
-}
-
-@property --word-flags {
+@property --k-cx {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -83,7 +65,19 @@
 	initial-value: 0;
 }
 
+@property --k-done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
 @property --o-done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --k-dead {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -95,115 +89,13 @@
 	initial-value: 0;
 }
 
-@property --o-live {
-	syntax: '<integer>';
-	inherits: true;
-	initial-value: 0;
-}
-
-@property --k-cx {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --x-cx {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --put-cx {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: -1;
-}
-
-@property --k-done {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --x-done {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --put-done {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: -1;
-}
-
-@property --k-dead {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --x-dead {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --put-dead {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: -1;
-}
-
 @property --k-live {
 	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --x-live {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --put-live {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: -1;
-}
-
-@property --e-cc {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --e-ta {
-	syntax: '<integer>';
-	inherits: false;
-	initial-value: 0;
-}
-
-@property --next {
-	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
 }
 
-@property --dead {
-	syntax: '<integer>';
-	inherits: true;
-	initial-value: 0;
-}
-
-@property --live {
-	syntax: '<integer>';
-	inherits: true;
-	initial-value: 0;
-}
-
-@property --done {
+@property --o-live {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -221,13 +113,133 @@
 	initial-value: 0;
 }
 
+@property --e {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
 @property --f {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
 }
 
-@property --ta-open {
+@property --valid {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --left {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --reset {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --gone {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --blank {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --esc {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --retype {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc0 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc1 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc2 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc3 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc4 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc5 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc6 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc7 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc8 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc9 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc10 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --mtc11 {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --cc {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -239,13 +251,19 @@
 	initial-value: 0;
 }
 
-@property --cc-edge {
+@property --ta {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
 }
 
-@property --ta-edge {
+@property --ta-open {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --flags {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -263,13 +281,103 @@
 	initial-value: 0;
 }
 
-@property --n-left {
+@property --h-done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --h-dead {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --x-cx {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --x-done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --x-dead {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --done {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --e-cc {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --dead {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --x-live {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --live {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --cx {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --todo {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --struck {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --now-live {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --now-done {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
 }
 
 @property --to-all {
+	syntax: '<integer>';
+	inherits: true;
+	initial-value: 0;
+}
+
+@property --n-left {
 	syntax: '<integer>';
 	inherits: true;
 	initial-value: 0;
@@ -287,16 +395,10 @@
 	initial-value: 0;
 }
 
-@property --struck {
-	syntax: '<integer>';
-	inherits: true;
-	initial-value: 0;
-}
-
 /* Keyframes and counter styles */
 @keyframes w-cx {
 	from {
-		--lw-cx: 4096;
+		--lw-cx: 65536;
 	}
 	to {
 		--lw-cx: 0;
@@ -305,7 +407,7 @@
 
 @keyframes w-done {
 	from {
-		--lw-done: 4096;
+		--lw-done: 65536;
 	}
 	to {
 		--lw-done: 0;
@@ -314,7 +416,7 @@
 
 @keyframes w-dead {
 	from {
-		--lw-dead: 4096;
+		--lw-dead: 65536;
 	}
 	to {
 		--lw-dead: 0;
@@ -323,28 +425,10 @@
 
 @keyframes w-live {
 	from {
-		--lw-live: 4096;
+		--lw-live: 65536;
 	}
 	to {
 		--lw-live: 0;
-	}
-}
-
-@keyframes w-count {
-	from {
-		--lw-count: 4096;
-	}
-	to {
-		--lw-count: 0;
-	}
-}
-
-@keyframes w-flags {
-	from {
-		--lw-flags: 4096;
-	}
-	to {
-		--lw-flags: 0;
 	}
 }
 
@@ -398,14 +482,24 @@ html {
 	background: #f5f5f5;
 }
 
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
 body {
 	background: #f5f5f5;
 	color: #111;
 	font: 300 14px/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	margin: 0 auto;
-	max-width: 550px;
+	padding-inline: max(0px, (100% - 550px) / 2);
 	-webkit-font-smoothing: antialiased;
-	timeline-scope: --v-cx, --v-done, --v-dead, --v-live, --v-count, --v-flags;
+	timeline-scope: --v-cx, --v-done, --v-dead, --v-live;
 }
 
 .todoapp :where(button) {
@@ -443,31 +537,86 @@ body {
 	isolation: isolate;
 	container: todoapp / inline-size;
 	--filter: 0;
-	--cc-open: 0;
-	--ta-open: 0;
+	animation: w-cx linear both, w-done linear both, w-dead linear both, w-live linear both;
+	animation-timeline: --v-cx, --v-done, --v-dead, --v-live;
+	--word-cx: max(0, round(var(--lw-cx) - 1));
+	--word-done: max(0, round(var(--lw-done) - 1));
+	--word-dead: max(0, round(var(--lw-dead) - 1));
+	--word-live: max(0, round(var(--lw-live) - 1));
 	&:has(#cc-cmd:popover-open) {
 		--cc-open: 1;
 	}
 	&:has(#ta-cmd:popover-open) {
 		--ta-open: 1;
 	}
-	--cc-edge: abs(var(--cc-open) - mod(var(--word-flags), 2));
-	--ta-edge: abs(var(--ta-open) - round(down, var(--word-flags) / 2));
-	--n-live: round(down, calc(var(--word-count) / 16), 1);
-	--n-done: mod(var(--word-count), 16);
+	&:has(.item:nth-child(1) .tgc:popover-open) {
+		--mtc0: 1;
+	}
+	&:has(.item:nth-child(2) .tgc:popover-open) {
+		--mtc1: 1;
+	}
+	&:has(.item:nth-child(3) .tgc:popover-open) {
+		--mtc2: 1;
+	}
+	&:has(.item:nth-child(4) .tgc:popover-open) {
+		--mtc3: 1;
+	}
+	&:has(.item:nth-child(5) .tgc:popover-open) {
+		--mtc4: 1;
+	}
+	&:has(.item:nth-child(6) .tgc:popover-open) {
+		--mtc5: 1;
+	}
+	&:has(.item:nth-child(7) .tgc:popover-open) {
+		--mtc6: 1;
+	}
+	&:has(.item:nth-child(8) .tgc:popover-open) {
+		--mtc7: 1;
+	}
+	&:has(.item:nth-child(9) .tgc:popover-open) {
+		--mtc8: 1;
+	}
+	&:has(.item:nth-child(10) .tgc:popover-open) {
+		--mtc9: 1;
+	}
+	&:has(.item:nth-child(11) .tgc:popover-open) {
+		--mtc10: 1;
+	}
+	&:has(.item:nth-child(12) .tgc:popover-open) {
+		--mtc11: 1;
+	}
+	--flags: round(down, var(--word-cx) / 4096);
+	--cc: abs(var(--cc-open) - mod(var(--flags), 2));
+	--ta: abs(var(--ta-open) - mod(round(down, var(--flags) / 2), 2));
+	--n-live: round(down, var(--word-live) / 4096);
+	--n-done: round(down, var(--word-done) / 4096);
+	--now-live: calc(mod(round(down, var(--word-live)), 2) + mod(round(down, var(--word-live) / 2),
+				2) + mod(round(down, var(--word-live) / 4), 2) + mod(round(down, var(--word-live) / 8), 2) +
+			mod(round(down, var(--word-live) / 16), 2) + mod(round(down, var(--word-live) / 32), 2) +
+			mod(round(down, var(--word-live) / 64), 2) + mod(round(down, var(--word-live) / 128), 2) +
+			mod(round(down, var(--word-live) / 256), 2) + mod(round(down, var(--word-live) / 512), 2) +
+			mod(round(down, var(--word-live) / 1024), 2) + mod(round(down, var(--word-live) / 2048), 2));
+	--now-done: calc(mod(round(down, var(--word-live)), 2) * abs(mod(round(down, var(--word-done)),
+					2) - var(--mtc0)) + mod(round(down, var(--word-live) / 2), 2) * abs(mod(round(down,
+						var(--word-done) / 2), 2) - var(--mtc1)) + mod(round(down, var(--word-live) / 4), 2) *
+			abs(mod(round(down, var(--word-done) / 4), 2) - var(--mtc2)) + mod(round(down,
+					var(--word-live) / 8), 2) * abs(mod(round(down, var(--word-done) / 8), 2) - var(--mtc3)) +
+			mod(round(down, var(--word-live) / 16), 2) * abs(mod(round(down, var(--word-done) / 16), 2) -
+				var(--mtc4)) + mod(round(down, var(--word-live) / 32), 2) * abs(mod(round(down,
+						var(--word-done) / 32), 2) - var(--mtc5)) + mod(round(down, var(--word-live) / 64), 2) *
+			abs(mod(round(down, var(--word-done) / 64), 2) - var(--mtc6)) + mod(round(down,
+					var(--word-live) / 128), 2) * abs(mod(round(down, var(--word-done) / 128), 2) -
+				var(--mtc7)) + mod(round(down, var(--word-live) / 256), 2) * abs(mod(round(down,
+						var(--word-done) / 256), 2) - var(--mtc8)) + mod(round(down, var(--word-live) / 512), 2) *
+			abs(mod(round(down, var(--word-done) / 512), 2) - var(--mtc9)) + mod(round(down,
+					var(--word-live) / 1024), 2) * abs(mod(round(down, var(--word-done) / 1024), 2) -
+				var(--mtc10)) + mod(round(down, var(--word-live) / 2048), 2) * abs(mod(round(down,
+						var(--word-done) / 2048), 2) - var(--mtc11)));
+	--to-all: calc(1 - min(sign(var(--now-live)), 1 - min(1, abs(var(--now-done) -
+						var(--now-live)))));
 	--n-left: calc(var(--n-live) - var(--n-done));
-	--to-all: calc(1 - min(sign(var(--n-live)), 1 - min(1, abs(var(--n-done) - var(--n-live)))));
 	--some: min(1, var(--n-live));
 	--alldone: calc(1 - var(--to-all));
-	animation: w-cx linear both, w-done linear both, w-dead linear both, w-live linear both,
-		w-count linear both, w-flags linear both;
-	animation-timeline: --v-cx, --v-done, --v-dead, --v-live, --v-count, --v-flags;
-	--word-cx: max(0, round(var(--lw-cx) - 1));
-	--word-done: max(0, round(var(--lw-done) - 1));
-	--word-dead: max(0, round(var(--lw-dead) - 1));
-	--word-live: max(0, round(var(--lw-live) - 1));
-	--word-count: max(0, round(var(--lw-count) - 1));
-	--word-flags: max(0, round(var(--lw-flags) - 1));
 	&:has([id="/active"]:target) {
 		--filter: 1;
 	}
@@ -620,27 +769,81 @@ body {
 .item {
 	display: contents;
 	anchor-scope: --todo;
-	--e: 0;
-	--f: 0;
-	--kept: 0;
+	--slot: calc(sibling-index() - 1);
+	--k-cx: mod(round(down, var(--word-cx) / pow(2, var(--slot))), 2);
+	--k-done: mod(round(down, var(--word-done) / pow(2, var(--slot))), 2);
+	--k-dead: mod(round(down, var(--word-dead) / pow(2, var(--slot))), 2);
+	--k-live: mod(round(down, var(--word-live) / pow(2, var(--slot))), 2);
 	--tc: 0;
+	&:has(.tgc:popover-open) {
+		--tc: 1;
+	}
 	--gx: 0;
+	&:has(.gxc:popover-open) {
+		--gx: 1;
+	}
+	--e: 0;
+	&:has(.title:invalid) {
+		--e: 1;
+	}
+	--f: 0;
+	&:has(.title:focus) {
+		--f: 1;
+	}
+	--valid: 0;
+	&:has(.title:valid) {
+		--valid: 1;
+	}
+	--left: 0;
+	&:has(.title:valid:not(:focus)) {
+		--left: 1;
+	}
+	--reset: 0;
+	&:has(.title:placeholder-shown:not(:focus)) {
+		--reset: 1;
+	}
+	--gone: 0;
+	&:has(.title:invalid:not(:focus)) {
+		--gone: 1;
+	}
+	--blank: 0;
+	&:is(:not(:has(.pop:popover-open)):has(.title:invalid), :has(.sink:focus)) {
+		--blank: 1;
+	}
+	--esc: 0;
+	.todoapp:not(:has(:active)) &:has(.open:focus):has(.title:valid):not(:has(.pop:popover-open)) {
+		--esc: 1;
+	}
+	--retype: 0;
+	&:has(.snap:active),
+	.todoapp:has(:is(.wipe, .wipe-all):active) &,
+	&:not(:has(.pop:popover-open)):has(.title:invalid:focus),
+	&:has(.pop:popover-open .title:focus) {
+		--retype: 1;
+	}
+	--h-done: abs(var(--k-done) - var(--tc));
+	--h-dead: abs(var(--k-dead) - var(--gx));
+	--x-cx: max(var(--esc), var(--k-cx) * (1 - max(var(--reset), var(--retype))));
+	--x-done: calc(var(--h-done) * (1 - var(--blank)));
+	--x-dead: calc(var(--h-dead) * (1 - max(var(--reset), var(--blank))));
+	--done: calc(var(--x-done) + var(--valid) * var(--ta) * (var(--to-all) - var(--x-done)));
+	--e-cc: calc(var(--valid) * var(--cc) * var(--done));
+	--dead: max(var(--x-dead), var(--e-cc));
+	--x-live: max(var(--left) * (1 - var(--dead)), var(--k-live) * (1 - var(--gone) * (1 -
+					var(--x-cx))));
+	--live: calc(var(--x-live) * (1 - max(var(--e-cc), var(--h-dead))));
+	--cx: calc(var(--x-cx) * (1 - var(--dead)));
+	--todo: max(var(--cx), var(--live) * (1 - var(--e) * var(--f)));
+	--struck: calc(var(--todo) * var(--done));
+	--o-cx: var(--x-cx);
+	--o-done: abs(var(--done) - var(--tc));
+	--o-dead: abs(var(--dead) - var(--gx));
+	--o-live: var(--live);
+	--kept: 0;
 	&:has(.title:invalid:not(:focus)):has(~ .item .title:valid),
 	&:has(.title:invalid):not(:has(~ .item .title:valid)) ~
 		&:has(.title:invalid):not(:has(.title:focus)) {
 		visibility: hidden;
-	}
-	&:has(.title:invalid) {
-		--e: 1;
-	}
-	&:has(.title:focus) {
-		--f: 1;
-	}
-	&:has(.tgc:popover-open) {
-		--tc: 1;
-	}
-	&:has(.gxc:popover-open) {
-		--gx: 1;
 	}
 	&:has(.title:valid):not(:focus-within, :has(.title:focus)) {
 		--kept: 1;
@@ -650,72 +853,14 @@ body {
 .row {
 	display: block;
 	font-style: inherit;
-	--k-cx: mod(round(down, var(--word-cx) / pow(2, var(--slot))), 2);
-	--x-cx: calc(var(--k-cx) + min(1, var(--put-cx) + 1) * (var(--put-cx) - var(--k-cx)));
-	--o-cx: var(--x-cx);
-	--k-done: abs(mod(round(down, var(--word-done) / pow(2, var(--slot))), 2) - var(--tc));
-	--x-done: calc(var(--k-done) + min(1, var(--put-done) + 1) * (var(--put-done) - var(--k-done)));
-	--done: calc(var(--x-done) + var(--e-ta) * (var(--to-all) - var(--x-done)));
-	--o-done: abs(var(--done) - var(--tc));
-	--k-dead: abs(mod(round(down, var(--word-dead) / pow(2, var(--slot))), 2) - var(--gx));
-	--x-dead: calc(var(--k-dead) + min(1, var(--put-dead) + 1) * (var(--put-dead) - var(--k-dead)));
-	--dead: max(var(--x-dead), var(--e-cc));
-	--o-dead: abs(var(--dead) - var(--gx));
-	--k-live: mod(round(down, var(--word-live) / pow(2, var(--slot))), 2);
-	--x-live: calc(var(--k-live) + min(1, var(--put-live) + 1) * (var(--put-live) - var(--k-live)));
-	--live: calc(var(--x-live) * (1 - max(var(--e-cc), var(--k-dead))));
-	--o-live: var(--live);
-	--cx: calc(var(--x-cx) * (1 - var(--dead)));
-	--todo: calc(max(var(--cx), var(--live) * (1 - var(--e) * var(--f))));
 	--out: calc(var(--todo) - var(--shown));
-	--struck: calc(var(--todo) * var(--done));
 	--shown: calc(var(--todo) * max(1 - min(1, var(--filter)), (1 - min(1, abs(var(--filter) - 1)))
 				* (1 - var(--done)), (1 - min(1, abs(var(--filter) - 2))) * var(--done)));
 	--stack: calc((1 - var(--todo)) * (1 - var(--dead)));
 	order: calc(0 - var(--stack));
 	margin-bottom: calc(var(--stack) * -65px);
-	:where(&) {
-		--e-cc: 0;
-		--e-ta: 0;
-	}
 	.item:has(.title:placeholder-shown) + .item:has(.title:placeholder-shown:not(:focus)) > & {
-		position: absolute;
 		visibility: hidden;
-		transition: position 0s 1s allow-discrete;
-	}
-	.item:has(.title:valid:not(:focus)) & {
-		--put-live: calc(1 - 2 * var(--dead));
-	}
-	.item:has(.title:placeholder-shown:not(:focus)) & {
-		--put-dead: 0;
-		--put-cx: 0;
-	}
-	.item:has(.title:invalid:not(:focus)) & {
-		--put-live: calc(0 - var(--x-cx));
-	}
-	.item:is(:not(:has(.pop:popover-open)):has(.title:invalid), :has(.sink:focus)) & {
-		--put-dead: 0;
-		--put-done: 0;
-	}
-	.todoapp .item:has(.title:valid) & {
-		--e-ta: var(--ta-edge);
-		--e-cc: calc(var(--cc-edge) * var(--done));
-	}
-	.todoapp:not(:has(:active))
-		.item:has(.open:focus):has(.title:valid):not(:has(.pop:popover-open)) & {
-		--put-cx: 1;
-	}
-	.item:has(.snap:active) & {
-		--put-cx: 0;
-	}
-	.todoapp:has(:is(.wipe, .wipe-all):active) & {
-		--put-cx: 0;
-	}
-	.item:not(:has(.pop:popover-open)):has(.title:invalid:focus) & {
-		--put-cx: 0;
-	}
-	.item:has(.pop:popover-open .title:focus) & {
-		--put-cx: 0;
 	}
 }
 
@@ -739,7 +884,7 @@ body {
 	width: 0;
 	height: 0;
 	view-timeline-axis: x, y;
-	view-timeline-inset: -1px calc(100% + 1px - 4096px), -1px calc(100% + 1px - 4096px);
+	view-timeline-inset: -1px calc(100% + 1px - 65536px), -1px calc(100% + 1px - 65536px);
 }
 
 .w0 {
@@ -757,7 +902,7 @@ body {
 
 .wt.w0 {
 	width: calc(var(--o-cx) * pow(2, var(--slot)) * 1px);
-	height: calc(var(--o-done) * pow(2, var(--slot)) * 1px);
+	height: calc((var(--o-done) * pow(2, var(--slot)) + var(--struck) * 4096) * 1px);
 }
 
 .w1 {
@@ -775,29 +920,11 @@ body {
 
 .wt.w1 {
 	width: calc(var(--o-dead) * pow(2, var(--slot)) * 1px);
-	height: calc(var(--o-live) * pow(2, var(--slot)) * 1px);
+	height: calc((var(--o-live) * pow(2, var(--slot)) + var(--todo) * 4096) * 1px);
 }
 
-.w2 {
-	anchor-name: --w2;
-}
-
-:is(.wt, .ws).w2 {
-	left: anchor(--w2 right);
-	top: anchor(--w2 bottom);
-}
-
-.ws.w2 {
-	view-timeline-name: --v-count, --v-flags;
-}
-
-.wt.w2 {
-	width: calc(var(--todo) * (16 + var(--done)) * 1px);
-	height: 0px;
-}
-
-.wk.w2 {
-	height: calc((var(--cc-open) + 2 * var(--ta-open)) * 1px);
+.wk.w0 {
+	width: calc((var(--cc-open) + var(--ta-open) * 2) * 4096px);
 }
 
 .sums {
@@ -942,6 +1069,17 @@ body {
 .under {
 	position: absolute;
 	inset: 0;
+}
+
+.pop:not(:popover-open):has(.title:invalid:focus:not(:active)) {
+	pointer-events: none;
+	.title {
+		pointer-events: auto;
+	}
+}
+
+.under:active {
+	z-index: 4;
 }
 
 .todo .toggle {
