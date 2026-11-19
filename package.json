@@ -1,6 +1,6 @@
 {
   "name": "todomvc-css",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A TodoMVC written in HTML and CSS, with no JavaScript.",
   "engines": {
     "node": ">=22.12.0"

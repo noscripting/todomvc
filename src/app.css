@@ -460,6 +460,15 @@
 	}
 }
 
+@keyframes sink {
+	from {
+		visibility: hidden;
+	}
+	to {
+		visibility: visible;
+	}
+}
+
 @counter-style todo-item {
 	system: fixed 1;
 	symbols: 'item';
@@ -964,7 +973,12 @@ body {
 	border: 0;
 	opacity: 0;
 	pointer-events: none;
-	.todoapp:has(.pop:popover-open .title:valid:focus) & {
+	animation: sink 1s linear paused both;
+	animation-delay: calc(var(--k-live) * -1s);
+	&:focus {
+		animation: none;
+	}
+	.item:has(.pop:popover-open .title:valid:focus) & {
 		display: block;
 	}
 }
@@ -980,6 +994,11 @@ body {
 	padding: 0;
 	border: 0;
 	opacity: 0;
+	animation: sink 1s linear paused both;
+	animation-delay: calc(var(--k-live) * -1s);
+	&:focus {
+		animation: none;
+	}
 	.pop:popover-open:has(.title:invalid) & {
 		display: block;
 	}
