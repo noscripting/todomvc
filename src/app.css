@@ -864,7 +864,7 @@ body {
 	}
 }
 
-/* What the page holds: three chains of boxes */
+/* What the page holds: two chains of boxes */
 .wk,
 .wt,
 .ws {
@@ -1416,9 +1416,10 @@ body {
 	}
 }
 
-@supports not ((anchor-name: --a) and (animation-timeline: view()) and selector(:popover-open)) {
+@supports not ((anchor-name: --a) and (animation-timeline: view()) and selector(:popover-open) and (width:
+			calc(sibling-index() * 1px)) and (width: abs(1px))) {
 	body::before {
-		content: 'This page needs Chrome 135, Safari 26.2 or Firefox 159, or later.';
+		content: 'This page needs Chrome 138, Safari 26.2 or Firefox 159, or later.';
 		display: block;
 		padding: 16px;
 		color: #b83f45;
@@ -1766,11 +1767,12 @@ body {
 /* Fonts */
 @font-face {
 	font-family: trim-spaces;
-	src: url("data:font/woff2;base64,d09GMgABAAAAAAFUAAsAAAAAAvQAAAELAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHGgGYAA8ygEBN\
-gIkAwzLCAQgBW8HMBsxAgAuDsxTnw5t08HwIx+mQ9Elx3ieOmLv7273Qeeh5wUcSKBhmnhiZRrVePHuznHtOR2X51m57NHaqxVJk\
-RJVUN08kLjA0q3z3JbHJUlgwQNRIGGadR6gBRbqBOc2dt2KR7BX9CMFo1YcyVPKAqhB74K82HqACIpBewYRw6qYFXsIIgqKIIbFo\
-IiImveIBqig21NY81Hrh9QvAQBrgoKKeVUwr9nDoCaKNR+9w6/0724cQBCej/+sU/wP1/oLb9sNPxuLFwCoCgixLH9IJlBdZBGOA\
-oVtgOZEQIwjoBgyrkobEcvmdBeTDi8pk5XWmv6A6llBHM3BFAleXdNWdMO3mMs3UjVlaLoiAgAAAA==") format('woff2');
+	src: url("data:font/woff2;base64,d09GMgABAAAAAAF8AAsAAAAAA1wAAAEyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHIE8BmAAPMoBA\
+TYCJAMQywoEIAVvBzoblQIAroc3BujZKcozDo0fO48+9daJycFREcbieb7Dt/tmJr1QLxRM5wA3kNK3EX/BmK7t8Sz/3bk5tOd0/\
+SsXjySfViRFSpQqqA6A4oHM/5WBdNPrzIdV4HXHh+8Chxtf4fItkABbmbfIowKMsBCCwNMb5nGKSeSnfVYwaOEoV9ZFIA26BLmXe\
+YFQUTS9Rh2dfMg+jehXxWQ8AEFEQRFEv7iGPYU4kzZ1Gm5ATx1Vc68ilZ65wWicVMDpVix1+uqufgkAlgoKKqarYLrZolcTxVIH8\
+D3dvwQBgvCnUyv8p+o/fq0/XgBUBYS1ON+UOdDyndmoOSdoAAoAAJrjgBhGQNFnWJU2IOan8lSM2v3RjD7xwdSord4Boq3avISZF\
+8ewBE33TOJQbNBQU1L7mCsD7AEAAAA=") format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	ascent-override: 95.2%;

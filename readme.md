@@ -6,7 +6,7 @@ This application uses HTML and CSS, with no JavaScript, to implement the TodoMVC
 
 ## Usage
 
-Open `index.html` in Chrome 135, Safari 26.2 or Firefox 159, or later.
+Open `index.html` in Chrome 138, Safari 26.2 or Firefox 159, or later.
 
 ## Tests
 
